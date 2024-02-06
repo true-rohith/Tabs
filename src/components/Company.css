@@ -1,0 +1,23 @@
+.company-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    transition: ease;
+    border-left: 2px transparent;
+}
+.company-name h4{
+    font-size: 18px;
+    font-weight: 1000;
+}
+.company-name:hover{
+    border-left: 3px solid #2caeba ;
+    color: #2caeba;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+.active-btn{
+    color: #2caeba;
+    border-left: 3px solid #2caeba ;
+}
