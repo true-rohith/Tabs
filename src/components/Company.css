@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 40px;
+    height: 30px;
+    margin: 0 20px;
+    padding-left: 40px;
     transition: ease;
     border-left: 2px transparent;
 }
 .company-name h4{
     font-size: 18px;
-    font-weight: 1000;
+    font-weight: 100;
 }
 .company-name:hover{
     border-left: 3px solid #2caeba ;
@@ -20,4 +21,18 @@
 .active-btn{
     color: #2caeba;
     border-left: 3px solid #2caeba ;
+}
+@media screen and (max-width: 800px){
+    .active-btn{
+        border-left: none;
+        border-bottom: 3px solid #2caeba ;
+    }
+    .company-name{
+        padding: 0;
+    }
+    .company-name:hover{
+        border-left: none;
+        border-bottom: 3px solid #2caeba ;
+        
+    }
 }

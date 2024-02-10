@@ -19,3 +19,37 @@ body{
   max-width: 1100px;
   margin-top: 50px;
 }
+.sub-container-right{
+  padding: 0;
+}
+.button{
+  display: flex;
+  background-color: #2caeba;
+  color: #bff8fd;
+  width: 200px;
+  height: 35px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  word-spacing: 8px;
+  transition: 0.3s linear;
+  margin: 20px;
+
+}
+.button:hover{
+  color: #044e53;
+  background-color: #88ebf2;
+}
+@media screen and (max-width: 800px) {
+
+  .sub-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-container-left{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

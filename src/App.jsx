@@ -17,7 +17,7 @@ function App() {
         <Heading />
         <HTMLHeadingElement />
         <div className="sub-container">
-          <div>
+          <div className="sub-container-left">
             {data.map((obj, index) => (
               <Company
                 setValue={setValue}
@@ -28,7 +28,7 @@ function App() {
               ></Company>
             ))}
           </div>
-          <div sub-container-right>
+          <div className="sub-container-right">
             <About
               title={title}
               company={company}
@@ -37,6 +37,7 @@ function App() {
             ></About>
           </div>
         </div>
+        <div className="button">more info</div>
       </div>
     </>
   );
